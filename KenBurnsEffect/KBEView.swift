@@ -152,8 +152,8 @@ class KBEView: UIView {
         let translateTransform = CGAffineTransform(translationX: horizontalTranslation, y: verticalTranslation)
         let panAndZoomTransform = zoomTransform.concatenating(translateTransform)
         
-        let animationOptions: UIViewAnimationOptions = .curveLinear
-        let keyframeAnimationOptions: UIViewKeyframeAnimationOptions = UIViewKeyframeAnimationOptions(rawValue: animationOptions.rawValue)
+        let animationOptions: UIView.AnimationOptions = .curveLinear
+        let keyframeAnimationOptions: UIView.KeyframeAnimationOptions = UIView.KeyframeAnimationOptions(rawValue: animationOptions.rawValue)
         UIView.animateKeyframes(withDuration: self.animationDuration, delay: self.initialImageDisplay, options: [keyframeAnimationOptions], animations:  {
             
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.6) {
@@ -183,8 +183,8 @@ class KBEView: UIView {
         let translateTransform = CGAffineTransform(translationX: horizontalTranslation, y: verticalTranslation)
         let panAndZoomTransform = zoomTransform.concatenating(translateTransform)
         
-        let animationOptions: UIViewAnimationOptions = .curveLinear
-        let keyframeAnimationOptions: UIViewKeyframeAnimationOptions = UIViewKeyframeAnimationOptions(rawValue: animationOptions.rawValue)
+        let animationOptions: UIView.AnimationOptions = .curveLinear
+        let keyframeAnimationOptions: UIView.KeyframeAnimationOptions = UIView.KeyframeAnimationOptions(rawValue: animationOptions.rawValue)
         UIView.animateKeyframes(withDuration: self.animationDuration, delay: self.initialImageDisplay, options: [keyframeAnimationOptions], animations:  {
             
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.5) {
@@ -225,8 +225,8 @@ class KBEView: UIView {
         let translateTransform = CGAffineTransform(translationX: horizontalTranslation, y: verticalTranslation)
         let panAndZoomTransform = zoomTransform.concatenating(translateTransform)
         
-        let animationOptions: UIViewAnimationOptions = .curveLinear
-        let keyframeAnimationOptions: UIViewKeyframeAnimationOptions = UIViewKeyframeAnimationOptions(rawValue: animationOptions.rawValue)
+        let animationOptions: UIView.AnimationOptions = .curveLinear
+        let keyframeAnimationOptions: UIView.KeyframeAnimationOptions = UIView.KeyframeAnimationOptions(rawValue: animationOptions.rawValue)
         UIView.animateKeyframes(withDuration: self.animationDuration, delay: self.initialImageDisplay, options: [keyframeAnimationOptions], animations:  {
             
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.3) {
@@ -271,8 +271,8 @@ class KBEView: UIView {
         let translate = CGAffineTransform(translationX: horizontalTranslation, y: verticalTranslation)
         let panAndZoom = translate.concatenating(zoomTransform)
         
-        let animationOptions: UIViewAnimationOptions = .curveLinear
-        let keyframeAnimationOptions: UIViewKeyframeAnimationOptions = UIViewKeyframeAnimationOptions(rawValue: animationOptions.rawValue)
+        let animationOptions: UIView.AnimationOptions = .curveLinear
+        let keyframeAnimationOptions: UIView.KeyframeAnimationOptions = UIView.KeyframeAnimationOptions(rawValue: animationOptions.rawValue)
         UIView.animateKeyframes(withDuration: self.animationDuration, delay: 0.0, options: [keyframeAnimationOptions], animations:  {
             
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.38) {
@@ -304,8 +304,8 @@ class KBEView: UIView {
         let translate = CGAffineTransform(translationX: horizontalTranslation, y: verticalTranslation)
         let panAndZoom = translate.concatenating(zoomTransform)
         
-        let animationOptions: UIViewAnimationOptions = .curveLinear
-        let keyframeAnimationOptions: UIViewKeyframeAnimationOptions = UIViewKeyframeAnimationOptions(rawValue: animationOptions.rawValue)
+        let animationOptions: UIView.AnimationOptions = .curveLinear
+        let keyframeAnimationOptions: UIView.KeyframeAnimationOptions = UIView.KeyframeAnimationOptions(rawValue: animationOptions.rawValue)
         UIView.animateKeyframes(withDuration: self.animationDuration, delay: 0.0, options: [keyframeAnimationOptions], animations:  {
             
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.38) {

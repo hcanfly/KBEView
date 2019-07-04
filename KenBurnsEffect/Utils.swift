@@ -27,7 +27,7 @@ extension CGRect {
 }
 
 extension CGImagePropertyOrientation {
-    init(_ orientation: UIImageOrientation) {
+    init(_ orientation: UIImage.Orientation) {
         switch orientation {
         case .up: self = .up
         case .upMirrored: self = .upMirrored
@@ -37,6 +37,8 @@ extension CGImagePropertyOrientation {
         case .leftMirrored: self = .leftMirrored
         case .right: self = .right
         case .rightMirrored: self = .rightMirrored
+        @unknown default:
+            fatalError("Unknown case statment in CGImagePropertyOrientation")
         }
     }
 }
